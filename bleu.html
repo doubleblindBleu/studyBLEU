@@ -44,34 +44,41 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div style="padding: 0 100px">
+<div style="padding: 0 60px">
 <p>
  To study the suitability of BLEU for code migration, we performed two experiments: (1) BLEU's correlation with semantic accuracy of translated source code with regard to the reference one when they are translated by a model, and (2) BLEU's effectiveness in comparing different SMT-based migration systems
 </p>
 <p> 
 <h3> 1. BLEU's correlation with semantic score </h3>
 We showed that BLEU has weak correlation with semantic score on two models mppSMT and lpSMT: </br>
+Samples of translated results: </br>
 	<ul>
-   <li> Sample of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuSingle.zip"> Download </a> </br></li>
-	<li>BLEU scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuSingle.xlsx"> Download </a> </br>	</ul></li>
+   <li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT.zip"> Download </a> </br></li>
+   <li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT.zip"> Download </a> </br></li>
+   </ul>
+BLEU scores and semantic scores: 
+<a href="https://doubleblindBleu.github.io/studyBLEU/bleuSingle.xlsx"> Download </a> </br>
 	Correlation coefficient results: </br>
 	<ul>
-	<li> mppSMT: </br> </li>
-	<li> lpSMT: </br> </li>
+	<li> mppSMT: 0.523</br> </li>
+	<li> lpSMT: 0.570</br> </li>
 	</ul>
 </p>
 
 <p>
 <h3> 2. BLEU in comparing models </h3>
-mppSMT vs p-mppSMT: </br>	<ul>
-   <li> Sample of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/mutated.zip"> Download </a> </br></li>
-	<li>BLEU scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/mutated.xlsx"> Download </a> </br></li></ul>
-GNMT vs mppSMT: </br>	<ul>
-   <li> Sample of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuCrossGnM.zip"> Download </a> </br></li>
-	<li>BLEU scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuCrossGnM.xlsx"> Download </a> </br></li></ul>
-lpSMT vs mppSMT: </br>	<ul>
-    <li>Sample of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuCrossMnL.zip"> Download </a> </br></li>
-	<li>BLEU scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuCrossMnL.xlsx"> Download </a> </br></li></ul>
+Samples of translated results: </br>
+	<ul>
+	<li> p-SMT: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSmt.zip"> Download </a> </br></li>
+	<li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT2.zip"> Download </a> </br></li>
+	<li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT2.zip"> Download </a> </br></li>
+	<li> GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br></li>
+   </ul>
+BLEU scores and semantic scores: <ul>
+	<li> mppSMT vs p-mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mutatedBleu.xlsx"> Download </a> </li>
+	<li> GNMT vs mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GvM_Bleu.xlsx"> Download </a></br> </li>
+	<li> lpSMT vs GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/LvG_Bleu.xlsx"> Download </a></br> </li>
+	</ul>
 </p>
 </div>
 <!-- JAVASCRIPTS -->

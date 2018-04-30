@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Alternative Metrics</title>
+<title>Experiments on RUBY</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -35,8 +35,8 @@ Licence URI: http://www.os-templates.com/template-terms
     <ul class="clear">
       <li><a href="index.html"> Home </a></li>
       <li><a href="bleu.html"> Experiments on BLEU </a></li>
-	  <li class="active"><a href="alter.html"> Alternative Metrics </a></li>
-      <li><a href="ruby.html"> Experiments on RUBY </a></li>
+	  <li><a href="alter.html"> Alternative metrics </a></li>
+      <li class="active"><a href="ruby.html"> Experiments on RUBY </a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
@@ -44,51 +44,46 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div style="padding: 0 30px">
-
+<div style="padding: 0 60px">
+<p>
+ To verify the effectiveness of RUBY for code migration, we performed two experiments: (1) RUBY's correlation with semantic score for a single model, and (2) the use of RUBY in comparing SMT-based migration systems
+</p>
 <p> 
-To evaluate the abilities of String Similarity (STS), Tree Similarity (TRS), and Graph Similarity (GRS) in reflecting
-the semantic accuracy of translated code, we conducted experiment to find out their correlation coefficients with semantic score: </br>
+<h3> 1. RUBY's correlation with semantic score </h3>
+We showed that RUBY has weak correlation with semantic score on two models mppSMT and lpSMT: </br>
 Samples of translated results: </br>
 	<ul>
    <li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT.zip"> Download </a> </br></li>
    <li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT.zip"> Download </a> </br></li>
    <li> GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br></li>
    </ul>
-Alternative metrics and semantic scores: 
-<a href="https://doubleblindBleu.github.io/studyBLEU/alter.xlsx"> Download </a> </br>
+RUBY scores and semantic scores: 
+<a href="https://doubleblindBleu.github.io/studyBLEU/rubySingle.xlsx"> Download </a> </br>
 	Correlation coefficient results: </br>
-	<table>
-  <tr>
-    <th></th>
-    <th>STS</th>
-    <th>TRS</th>
-	<th>GRS</th>
-  </tr>
-  <tr>
-    <td>mppSMT<sup>[1]</sup></td>
-    <td>0.549</td>
-    <td>0.820</td>
-	<td>0.910</td>
-  </tr>
-  <tr>
-    <td>lpSMT</td>
-    <td>0.533</td>
-    <td>0.786</td>
-	<td>0.823</td>
-  </tr>
-  <tr>
-    <td>GNMT</td>
-    <td>0.692</td>
-    <td>0.734</td>
-	<td>0.927</td>
-  </tr> 
-</table> 
+	<ul>
+	<li> mppSMT: 0.815</br> </li>
+	<li> lpSMT: 0.747</br> </li>
+	<li> GNMT: 0.764</br> </li>
+	</ul>
+</p>
+
+<p>
+<h3> 2. RUBY in comparing models </h3>
+Samples of translated results: </br>
+	<ul>
+	<li> p-SMT: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSmt.zip"> Download </a> </br></li>
+	<li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT2.zip"> Download </a> </br></li>
+	<li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT2.zip"> Download </a> </br></li>
+	<li> GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br></li>
+   </ul>
+RUBY scores and semantic scores: <ul>
+	<li> mppSMT vs p-mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mutatedRuby.xlsx"> Download </a> </li>
+	<li> GNMT vs mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GvM_Ruby.xlsx"> Download </a></br> </li>
+	<li> lpSMT vs GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/LvG_Ruby.xlsx"> Download </a></br> </li>
+	<li> mppSMT vs lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/MvL_Ruby.xlsx"> Download </a></br> </li>
+	</ul>
 </p>
 </div>
-<footer>
-
-</footer>
 <!-- JAVASCRIPTS -->
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
