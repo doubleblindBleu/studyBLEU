@@ -34,8 +34,8 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <ul class="clear">
       <li class="active"><a href="index.html"> Home </a></li>
-      <li><a href="trans.html"> Translation Data </a></li>
       <li><a href="bleu.html"> Experiments on BLEU </a></li>
+	  <li><a href="alter.html"> Alternative Metrics </a></li>
       <li><a href="ruby.html"> Experiments on RUBY </a></li>
     </ul>
     <!-- ################################################################################################ -->
@@ -56,7 +56,11 @@ code.</br>
 
   In this work, we conducted an empirical study on BLEU score to invalidate its suitability for the code migration task due to its inability to reflect the semantics of source code. For our study, we used human judgment as the ground truth to measure the semantic correctness of the migrated code. We demonstrated that BLEU score has a weak correlation with the semantic correctness of translated code, and also provided counter-examples to show that BLEU is ineffective in comparing the translation quality between SMT-based models. Due to BLEU's ineffectiveness for code migration task, we propose an alternative metric RUBY, which considers lexical, syntactical, and semantic representations of source code. We verified that RUBY achieves a strong correlation with the semantic correctness of migrated code, and RUBY is effective in reflecting the changes in translation quality of SMT-based translation models.
     </p>
-
+	<p>
+    To study on SMT-based migration models, we collected a parallel corpus of 34,209 pairs of methods written in both Java and C#. 
+	Those methods were created manually by developers, and used in 9 open-source systems that 
+	were originally developed in Java and ported to C# <a href="https://doubleblindbleu.github.io/studyBLEU/transData.zip">Download </a> </br>
+    </p>
   </section>
 </div>
 <!-- JAVASCRIPTS -->
