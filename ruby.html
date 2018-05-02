@@ -46,41 +46,38 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div style="padding: 40px 60px">
-<p>
- To verify the effectiveness of RUBY for code migration, we performed two experiments: (1) RUBY's correlation with semantic score for a single model, and (2) the use of RUBY in comparing SMT-based migration systems
-</p>
+
+<h2> Section VII.B. Empirical results for RUBY </h2>
+
 <p> 
-<h3> 1. RUBY's correlation with semantic score </h3>
-We showed that RUBY has weak correlation with semantic score on two models mppSMT and lpSMT: </br>
-Samples of translated results: </br>
-	<ul>
-   <li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT.zip"> Download </a> </br></li>
-   <li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT.zip"> Download </a> </br></li>
-   <li> GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br></li>
-   </ul>
-RUBY scores and semantic scores: 
-<a href="https://doubleblindBleu.github.io/studyBLEU/rubySingle.xlsx"> Download </a> </br>
-	Correlation coefficient results: </br>
-	<ul>
-	<li> mppSMT: 0.815</br> </li>
-	<li> lpSMT: 0.747</br> </li>
-	<li> GNMT: 0.764</br> </li>
-	</ul>
+<h3> 1) Correlation of RUBY and semantic scores: </h3>
+On mppSMT model: Correlation result is 0.815 </br>
+Sample of translated results (mppSMT model): <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT.zip"> Download </a> </br>
+Data of RUBY scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuSingle.xlsx"> Download </a> </br>
+</br>
+On lpSMT model: Correlation result is 0.747 </br>
+Sample of translated results (lpSMT model): <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT.zip"> Download </a> </br>
+Data of RUBY scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/rubySingle.xlsx"> Download </a> </br>
+</br>
+On GNMT model: Correlation result is 0.764 </br>
+Sample of translated results (GNMT model): <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br>
+Data of RUBY scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/rubySingle.xlsx"> Download </a> </br>
 </p>
 
 <p>
-<h3> 2. RUBY in comparing models </h3>
-Samples of translated results: </br>
-	<ul>
-	<li> p-SMT: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSmt.zip"> Download </a> </br></li>
-	<li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT2.zip"> Download </a> </br></li>
-	<li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT2.zip"> Download </a> </br></li>
-	<li> GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br></li>
-   </ul>
-RUBY scores and semantic scores: <ul>
-	<li> mppSMT vs p-mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mutatedRuby.xlsx"> Download </a> </li>
-	<li> mppSMT, GNMT, lpSMT pairwise comparison: <a href="https://doubleblindBleu.github.io/studyBLEU/rubyCross.xlsx"> Download </a> </li>
-	</ul>
+<h3> 2) The use of RUBY in comparing models </h3>
+2a. mppSMT vs p-mppSMT </br>
+Samples of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSMT.zip"> Download </a> </br>
+Data of RUBY scores, semantic scores, and t-test: <a href="https://doubleblindBleu.github.io/studyBLEU/mutatedRuby.xlsx"> Download </a> </br>
+</br>
+
+2b. mppSMT, GNMT, lpSMT pairwise comparison </br>
+Samples of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT2.zip"> mppSMT </a>, <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT2.zip"> lpSMT </a> , <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> GNMT </a> </br>
+Data of RUBY scores, semantic scores, and t-test: <a href="https://doubleblindBleu.github.io/studyBLEU/rubyCross.xlsx"> Download </a>
+</br>
+</br>
+Each score index is according to a line in the translated results. 
+ </br>
 </p>
 <!-- <li> GNMT vs mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GvM_Ruby.xlsx"> Download </a></br> </li>
 	<li> lpSMT vs GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/LvG_Ruby.xlsx"> Download </a></br> </li>
