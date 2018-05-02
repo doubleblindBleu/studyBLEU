@@ -34,9 +34,10 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <ul class="clear">
       <li><a href="index.html"> Home </a></li>
-      <li class="active"><a href="bleu.html"> Experiments on BLEU </a></li>
-	  <li><a href="alter.html"> Alternative metrics </a></li>
-      <li><a href="ruby.html"> Experiments on RUBY </a></li>
+	  <li class="active"><a href="data.html"> Section IV. Data Collection </a></li>
+      <li><a href="bleu.html"> Section V. Experiments on BLEU </a></li>
+	  <li><a href="alter.html"> Section VI. Alternative Metrics </a></li>
+      <li><a href="ruby.html"> Section VII. Experiments on RUBY </a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
@@ -44,12 +45,32 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div style="padding: 0 60px">
+<div style="padding: 40px 60px">
+
+<h3> Section V.A: Correlation between BLEU scores and semantic scores </h3>
 <p>
- To study the suitability of BLEU for code migration, we performed two experiments: (1) BLEU's correlation with semantic accuracy of translated source code with regard to the reference one when they are translated by a model, and (2) BLEU's effectiveness in comparing different SMT-based migration systems
+Fig. 2: BLEU scores vs Semantic scores (lpSMT model) </br>
+<img src="https://doubleblindBleu.github.io/studyBLEU/bleu1.png"> </br>
+Sample of translated results (lpSMT model): <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT.zip"> Download </a> </br>
+Data of BLEU scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuSingle.xlsx"> Download </a> </br>
 </p>
-<p> 
-<h3> 1. BLEU's correlation with semantic score </h3>
+<p>
+Fig. 3: BLEU scores vs Semantic scores (mppSMT model) </br>
+<img src="https://doubleblindBleu.github.io/studyBLEU/bleu2.png"> </br>
+Sample of translated results (mppSMT model): <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT.zip"> Download </a> </br>
+Data of BLEU scores and semantic scores: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuSingle.xlsx"> Download </a> </br>
+</p>
+<h3> Section V.B: The use of BLEU in comparing SMT migration models </h3>
+<p>
+1. mppSMT vs p-mppSMT </br>
+Samples of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSMT.zip"> Download </a> </br>
+Data of BLEU scores, semantic scores, and t-test: <a href="https://doubleblindBleu.github.io/studyBLEU/mutatedBleu.xlsx"> Download </a> </br>
+</br>
+2. mppSMT, GNMT, lpSMT pairwise comparison </br>
+Samples of translated results: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT2.zip"> mppSMT </a>, <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT2.zip"> lpSMT </a> , <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> GNMT </a> </br>
+Data of BLEU scores, semantic scores, and t-test: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuCross.xlsx"> Download </a>
+
+<!--
 We showed that BLEU has weak correlation with semantic score on two models mppSMT and lpSMT: </br>
 Samples of translated results: </br>
 	<ul>
@@ -64,12 +85,11 @@ BLEU scores and semantic scores:
 	<li> lpSMT: 0.570</br> </li>
 	</ul>
 </p>
-
 <p>
 <h3> 2. BLEU in comparing models </h3>
 Samples of translated results: </br>
 	<ul>
-	<li> p-SMT: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSmt.zip"> Download </a> </br></li>
+	<li> p-mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/pmppSmt.zip"> Download </a> </br></li>
 	<li> mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/mppSMT2.zip"> Download </a> </br></li>
 	<li> lpSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/lpSMT2.zip"> Download </a> </br></li>
 	<li> GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GNMT.zip"> Download </a> </br></li>
@@ -81,6 +101,7 @@ BLEU scores and semantic scores:
 	<li> mppSMT, GNMT, lpSMT pairwise comparison: <a href="https://doubleblindBleu.github.io/studyBLEU/bleuCross.xlsx"> Download </a> </li>
 	</ul>
 </p>
+-->
 <!--
 	<li> GNMT vs mppSMT: <a href="https://doubleblindBleu.github.io/studyBLEU/GvM_Bleu.xlsx"> Download </a></br> </li>
 	<li> lpSMT vs GNMT: <a href="https://doubleblindBleu.github.io/studyBLEU/LvG_Bleu.xlsx"> Download </a></br> </li>
